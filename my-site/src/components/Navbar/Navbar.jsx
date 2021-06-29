@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import { Button } from './Button';
+import Logo from '../../assets/logo-white.png'
 
 class Navbar extends Component {
 	state = { clicked: true }
@@ -12,7 +13,7 @@ class Navbar extends Component {
 	render() {
 		return(
 			<nav className="navbar-container">
-				<h1 className="navbar-logo">NxNE Web Solutions<i className="fab fa-react"></i></h1>
+				<img src={Logo} alt="logo" className="navbar-logo"/>
 				<div className="menu-icon" onClick={this.handClick}>
 					<i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
 				</div>
