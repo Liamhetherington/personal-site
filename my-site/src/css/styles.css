@@ -5,6 +5,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.app-body {
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar-container {
   display: flex;
   flex-direction: row;
@@ -240,6 +245,48 @@
     width: 100% !important;
     height: 100%;
     margin: 0px !important;
+  }
+}
+
+.app-body {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 25px auto;
+  align-items: center;
+  height: 450px;
+  justify-content: center;
+  background-color: rgba(55, 160, 176, 0.757);
+}
+
+.contact-form .form-item {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.contact-form .form-item input,
+.contact-form .form-item textarea {
+  border-radius: 0px;
+  border: 0.5px solid white;
+  background-color: lightgrey;
+  resize: none;
+}
+
+.contact-form #contact-submit {
+  width: 20%;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  #contact-submit {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

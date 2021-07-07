@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar'
 import Homepage from './components/Homepage'
+import ContactForm from './components/ContactForm';
 import './css/styles.css';
 
 function App() {

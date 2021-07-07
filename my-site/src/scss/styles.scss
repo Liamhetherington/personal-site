@@ -5,5 +5,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.app-body {
+  display: flex;
+  flex-direction: column;
+}
+
 @import "./navbar";
 @import "./homepage";
+@import "./contactform";
