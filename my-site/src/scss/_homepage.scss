@@ -1,29 +1,32 @@
-.hero-banner {
-  background-color: aliceblue;
-  background-image: url(../assets/homepage_hero.svg);
-  background-repeat: no-repeat;
-  background-position: 90% 170%;
-  background-size: 550px 430px;
-  padding: 50px;
-  height: 500px;
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    background: rgba(92, 130, 244, 0.5);
-    height: 300px;
-    padding: 35px;
-    width: 50%;
-    margin-left: 5vw;
-    .hero-title {
-      width: 100%;
-      font-size: 42px;
-      font-weight: 300;
-      color: white;
-    }
-    .hero-subtitle {
-      width: 100%;
-      font-weight: 100;
-      color: white;
+.home-body {
+  background-color: black;
+  .hero-banner {
+    background-color: aliceblue;
+    background-image: url(../assets/homepage_hero.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 170%;
+    background-size: 550px 430px;
+    padding: 50px;
+    height: 500px;
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      background: rgba(92, 130, 244, 0.5);
+      height: 300px;
+      padding: 35px;
+      width: 50%;
+      margin-left: 5vw;
+      .hero-title {
+        width: 100%;
+        font-size: 42px;
+        font-weight: 300;
+        color: white;
+      }
+      .hero-subtitle {
+        width: 100%;
+        font-weight: 100;
+        color: white;
+      }
     }
   }
 }

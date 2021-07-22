@@ -4,7 +4,7 @@ import { Button } from './Button';
 import Logo from '../../assets/logo-white.png'
 
 class Navbar extends Component {
-	state = { clicked: true }
+	state = { clicked: false }
 
 	handClick = () => {
 		this.setState({ clicked: !this.state.clicked})

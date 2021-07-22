@@ -1,7 +1,9 @@
 import Navbar from './components/Navbar/Navbar'
-import Homepage from './components/Homepage'
+import Homepage from './views/Homepage'
 import ContactForm from './components/ContactForm';
 import './css/styles.css';
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
