@@ -3,27 +3,32 @@
   justify-content: center;
 }
 .contact-form {
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 25px auto;
   align-items: center;
-  height: 450px;
+  height: 520px;
   justify-content: center;
-  background-color: rgba(55, 160, 176, 0.757);
+  background-color: #6668f4;
 
   .form-item {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 20px auto;
+    color: white;
 
     input,
     textarea {
-      border-radius: 0px;
-      border: 0.5px solid white;
-      background-color: lightgrey;
+      min-height: 30px;
+      border: none !important;
+      border-radius: 4px;
       resize: none;
+    }
+    textarea {
+      min-height: 150px;
     }
   }
 

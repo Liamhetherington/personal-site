@@ -1,0 +1,30 @@
+.contact-cta {
+  min-height: 400px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .contact-cta-content {
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(black, 0.2);
+    background-color: white;
+    min-height: 300px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+  }
+  .cta-title {
+    font-size: 36px;
+    font-weight: 300;
+  }
+  .cta-subtitle {
+    font-weight: 300;
+    font-size: 21px;
+  }
+  .contact-cta-btn {
+    margin: 0 !important;
+  }
+}

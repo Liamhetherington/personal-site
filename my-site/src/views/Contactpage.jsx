@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
+import ContactForm from '../components/ContactForm/ContactForm';
 
-class Services extends Component {
+
+class ContactPage extends Component {
   render() {
     return(
       <div className="services-body">
         <div className="services-banner">
-          <h1 className="services-title">What do we bring to your business?</h1>
+          <h1 className="services-title">Tell us about your business</h1>
         </div>
           <div className="main-content">
-
+            <ContactForm />
           </div>
       </div>
     )
   }
 }
 
-export default Services
+export default ContactPage

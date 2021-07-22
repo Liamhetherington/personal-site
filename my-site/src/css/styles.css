@@ -1,9 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 300px;
+  background: linear-gradient(90deg, #6e5efe 0%, #493ffc 100%);
+}
+
+.footer-container .footer-logo {
+  height: 275px;
+  margin-top: -40px;
+  margin-bottom: -60px;
+}
+
+.footer-container .footer-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+}
+
+.footer-container .footer-menu li {
+  margin: 15px;
+}
+
+.footer-container .footer-menu .nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.footer-container .footer-menu .nav-links:hover {
+  background-color: #6d76f7;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.footer-container .footer-menu .nav-links-mobile {
+  display: none;
+}
+
 .navbar-container {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
   background: linear-gradient(90deg, #6e5efe 0%, #493ffc 100%);
   height: 90px;
+  padding: 30px;
 }
 
 .navbar-container .navbar-logo {
@@ -76,8 +133,8 @@
 .btn:hover {
   padding: 8px 20px;
   transition: all 0.3s ease-out;
-  background: #fff;
-  color: #6568f4;
+  background: #6568f4;
+  color: #fff;
 }
 
 .btn--primary {
@@ -98,6 +155,7 @@
   border-radius: 4px;
   font-size: 18px;
   color: #fff;
+  margin: 0 !important;
 }
 
 .btn--large {
@@ -191,30 +249,30 @@
 }
 
 .home-body {
-  background-color: black;
+  font-family: "Lato", sans-serif;
 }
 
 .home-body .hero-banner {
-  background-color: aliceblue;
-  background-image: url(../assets/homepage_hero.svg);
-  background-repeat: no-repeat;
-  background-position: 90% 170%;
-  background-size: 550px 430px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 50px;
   height: 500px;
 }
 
 .home-body .hero-banner .hero-content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  background: rgba(92, 130, 244, 0.5);
+  background: #004aad;
   height: 300px;
   padding: 35px;
   width: 50%;
-  margin-left: 5vw;
 }
 
 .home-body .hero-banner .hero-content .hero-title {
+  margin-left: 3vw;
+  z-index: 100;
   width: 100%;
   font-size: 42px;
   font-weight: 300;
@@ -222,9 +280,58 @@
 }
 
 .home-body .hero-banner .hero-content .hero-subtitle {
+  margin-left: 3vw;
+  z-index: 100;
   width: 100%;
-  font-weight: 100;
+  font-weight: 300;
   color: white;
+}
+
+.home-body .hero-banner .hero-content .hero-box {
+  z-index: 2;
+  position: absolute;
+  min-height: 300px;
+  width: 335px;
+  top: 10vh;
+  left: 40vh;
+  background-color: #fa6e73;
+}
+
+.home-body .hero-banner .hero-content .hero-box-2 {
+  z-index: 3;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 25vh;
+  left: 25vh;
+  background-color: #4d78db;
+}
+
+.home-body .hero-banner .hero-content .home-hero-img {
+  height: 400px !important;
+  z-index: 100;
+}
+
+.home-body .mission-statement {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  color: #1c1c1c;
+}
+
+.home-body .mission-statement h2 {
+  text-decoration: underline;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.home-body .mission-statement p {
+  text-align: center;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 830px) {
@@ -246,14 +353,15 @@
 }
 
 .contact-form {
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 25px auto;
   align-items: center;
-  height: 450px;
+  height: 520px;
   justify-content: center;
-  background-color: rgba(55, 160, 176, 0.757);
+  background-color: #6668f4;
 }
 
 .contact-form .form-item {
@@ -261,14 +369,19 @@
   flex-direction: column;
   width: 80%;
   margin: 20px auto;
+  color: white;
 }
 
 .contact-form .form-item input,
 .contact-form .form-item textarea {
-  border-radius: 0px;
-  border: 0.5px solid white;
-  background-color: lightgrey;
+  min-height: 30px;
+  border: none !important;
+  border-radius: 4px;
   resize: none;
+}
+
+.contact-form .form-item textarea {
+  min-height: 150px;
 }
 
 .contact-form #contact-submit {
@@ -288,15 +401,38 @@
   min-height: 550px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+.contact-cta {
+  min-height: 400px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.app-body {
+.contact-cta .contact-cta-content {
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  min-height: 300px;
+  width: 40%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.contact-cta .cta-title {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.contact-cta .cta-subtitle {
+  font-weight: 300;
+  font-size: 21px;
+}
+
+.contact-cta .contact-cta-btn {
+  margin: 0 !important;
 }
 /*# sourceMappingURL=styles.css.map */
