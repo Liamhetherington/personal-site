@@ -64,7 +64,7 @@
 }
 
 .navbar-container .navbar-logo {
-  width: 20%;
+  width: 50%;
   justify-self: flex-start;
   margin-left: 60px;
   cursor: pointer;
@@ -332,6 +332,118 @@
 .home-body .mission-statement p {
   text-align: center;
   font-weight: 300;
+}
+
+.home-body .about-section {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  min-height: 550px;
+  padding: 30px;
+}
+
+.home-body .about-section .about-content {
+  padding: 20px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.home-body .about-section .about-content h2 {
+  font-weight: 300;
+  color: white;
+  text-decoration: underline;
+}
+
+.home-body .about-section .about-content p {
+  color: white;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.home-body .about-section .about-content .about-btn {
+  margin-top: 20px;
+}
+
+.home-body .about-section .about-image {
+  max-width: 50%;
+  z-index: 1;
+}
+
+.home-body .about-section .about-image img {
+  max-width: 100%;
+}
+
+.home-body .about-section .about-box {
+  z-index: 2;
+  background-color: #004aad;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+}
+
+.home-body .work-section {
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-body .work-section h2,
+.home-body .work-section p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.home-body .work-section h2 {
+  text-decoration: underline;
+}
+
+.home-body .work-section .work-samples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-body .work-section .work-samples .project-sample {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  margin: 20px 0;
+}
+
+.home-body .work-section .work-samples .project-sample img {
+  max-width: 40%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-body .work-section .work-samples .project-sample .project-description {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.home-body .work-section .work-samples .project-sample .project-description a {
+  color: black;
+}
+
+.home-body .work-section .work-samples .project-sample .project-description h3 {
+  font-weight: 300;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.home-body .work-section .work-samples .project-sample .project-description p {
+  text-align: left;
+}
+
+.home-body .work-section .work-samples .project-sample .project-description .project-link {
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 830px) {
