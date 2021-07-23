@@ -12,10 +12,10 @@
       flex-direction: column;
       background: #004aad;
       height: 300px;
-      padding: 35px;
+      padding: 45px;
       width: 50%;
       .hero-title {
-        margin-left: 3vw;
+        margin: 2vh 3vw;
         z-index: 100;
         width: 100%;
         font-size: 42px;
@@ -33,24 +33,24 @@
         z-index: 2;
         position: absolute;
         min-height: 300px;
-        width: 335px;
-        top: 10vh;
-        left: 40vh;
+        width: 355px;
+        top: 15vh;
+        left: 55vh;
         background-color: #fa6e73;
       }
       .hero-box-2 {
         z-index: 3;
-        width: 250px;
+        width: 270px;
         height: 100px;
         position: absolute;
-        top: 25vh;
-        left: 25vh;
+        top: 20vh;
+        left: 30vh;
         background-color: #4d78db;
       }
-      .home-hero-img {
-        height: 400px !important;
-        z-index: 100;
-      }
+    }
+    .home-hero-img {
+      height: 400px !important;
+      z-index: 4 !important;
     }
   }
 
@@ -117,9 +117,59 @@
     }
   }
 
+  .services-section {
+    margin: 30px 0;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-weight: 300;
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+    p {
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+    .services-content {
+      width: 100%;
+      .service-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        margin-top: 140px;
+        .service-card {
+          padding: 20px;
+          border-radius: 4px;
+          box-shadow: 0 3px 10px rgba(black, 0.2);
+          max-width: 300px;
+          max-height: 450px;
+          h3 {
+            margin-top: 30px;
+            text-align: left;
+            font-weight: 400;
+            padding: 0 20px;
+          }
+          p {
+            text-align: left;
+            padding: 20px;
+            font-size: 16px;
+          }
+          svg {
+            margin-top: -130px;
+          }
+        }
+      }
+    }
+  }
+
   .work-section {
     min-height: 550px;
     display: flex;
+    margin-top: 70px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -136,6 +186,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 30px 0;
       .project-sample {
         display: flex;
         flex-direction: row;

@@ -4,9 +4,17 @@ import HomeHero from '../components/SVGs/HomepageBanner'
 import { Button }from '../components/Navbar/Button'
 
 import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 import AboutImg from '../assets/about-banner.jpg'
-import WorkGif from '../assets/2021-07-06 19.45.38.gif'
+import GAGif from '../assets/2021-07-06 19.45.38.gif'
+import CastGif from '../assets/2021-07-22 22.47.10.gif'
+
+import WireFramingImg from '../components/SVGs/WireFramingImg'
+import CMSImg from '../components/SVGs/CMSImg'
+import SEOImg from '../components/SVGs/SEOImg'
+import AnalyticsImg from '../components/SVGs/AnalyticsImg'
+import ReactImg from '../components/SVGs/ReactImg'
 
 class Homepage extends Component {
 
@@ -52,6 +60,71 @@ class Homepage extends Component {
           </Fade>
 
           
+            <div className="services-section">
+            <div className="services-content">
+              <Fade bottom duration={3000}>
+                <h2>How are we going to help?</h2>
+                <p>Here are just some of the ways we can help your business increase traffic.</p>
+              </Fade>
+                
+              <div className="service-cards">
+                <Fade left duration={2000}>
+                  <div className="service-card">
+                    <ReactImg />
+                    <h3>React Development</h3>
+                    <p>We can build you a design from the ground up with multi-step wireframing. This is where you get to decide what pages you need, which features are going to be required, and where everything fits! Don't forget branding. Our design experts will provide suggestions and help bring your vision to life!</p>
+                  </div>
+                </Fade>
+                <Fade left duration={2000}>
+                  <div className="service-card">
+                    <CMSImg />
+                    <h3>Content Management Systems</h3>
+                    <p>Let us build you a new content management system(CMS). Using either WordPress or Drupal, we will build a turnkey CMS website that allows you to create pages and posts, update images and content, and view user analytics.</p>                    
+                  </div>
+                </Fade>
+                <Fade left duration={2000}>
+                  <div className="service-card">
+                    <SEOImg />
+                    <h3>Search Engine Optimization</h3>
+                    <p>Let us build you a new content management system(CMS). Using either WordPress or Drupal, we will build a turnkey CMS that allows you to create pages and posts, update images and content, and view user analytics.</p> 
+                  </div>
+                </Fade>  
+                <Fade left duration={2000}>
+                  <div className="service-card">
+                    <AnalyticsImg />
+                    <h3>Web Analytics</h3>
+                    <p>Learn more about your users and what they are doing on your site. Understand where traffic is coming from in order to target marketing campaigns and how to nurture visitor growth.</p> 
+                  </div>
+                </Fade>
+              </div>
+
+              <div className="service-cards">
+                <Fade left duration={2000}>
+                  <div className="service-card">
+                    <WireFramingImg />
+                    <h3>Wireframing</h3>
+                    <p>We can build you a design from the ground up with multi-step wireframing. This is where you get to decide what pages you need, which features are going to be required, and where everything fits! Don't forget branding. Our design experts will provide suggestions and help bring your vision to life!</p>
+                  </div>
+                </Fade>
+                <Fade left duration={2000}>
+                  <div className="service-card">
+                    <CMSImg />
+                    <h3>Content Management Systems</h3>
+                    <p>Let us build you a new content management system(CMS). Using either WordPress or Drupal, we will build a turnkey CMS website that allows you to create pages and posts, update images and content, and view user analytics.</p>                    
+                  </div>
+                </Fade>
+                <Fade left duration={2000}>
+                  <div className="service-card">
+                    <SEOImg />
+                    <h3>Search Engine Optimization</h3>
+                    <p>Let us build you a new content management system(CMS). Using either WordPress or Drupal, we will build a turnkey CMS that allows you to create pages and posts, update images and content, and view user analytics.</p> 
+                  </div>
+                </Fade>  
+                </div>              
+              </div>    
+            </div>
+
+          
             <div className="work-section">
               <div className="work-content">
                 <Fade bottom duration={3000}>
@@ -62,7 +135,7 @@ class Homepage extends Component {
                 <div className="work-samples">
                   <Fade left duration={3000}>
                     <div className="project-sample">            
-                      <img alt="work sample GIF" src={WorkGif} />                   
+                      <img alt="work sample GIF" src={GAGif} />                   
                       <div className="project-description">
                         <a href="/projects#genuine-athletics">
                           <h3>Genuine Athletics</h3>
@@ -71,23 +144,14 @@ class Homepage extends Component {
                       </div>      
                   </div>
                    <div className="project-sample">            
-                      <img alt="work sample GIF" src={WorkGif} />                   
+                      <img alt="work sample GIF" src={CastGif} />                   
                       <div className="project-description">
-                        <a href="/projects#genuine-athletics">
-                          <h3>Genuine Athletics</h3>
+                        <a href="/projects#cast">
+                          <h3>Cast.</h3>
                         </a>
-                        <p>This athletic training website is built with WordPress. It uses a child theme and a responsive mobile design for theming. Integrations include Elementor editor, Mailchimp, and WooCommerce.</p>
+                        <p>Cast. is a podcast sharing platform built with React.js. The idea behind Cast. is to allow users to find communities of listeners with similar interests and spark conversations over all different types of podcasts episodes. Think of it as a book club for podcasts. We use API queries to allow users to search for podcasts by name, artist, or category.</p>
                       </div>      
                   </div> 
-                    <div className="project-sample">            
-                      <img alt="work sample GIF" src={WorkGif} />                   
-                      <div className="project-description">
-                        <a href="/projects#genuine-athletics">
-                          <h3>Genuine Athletics</h3>
-                        </a>
-                        <p>This athletic training website is built with WordPress. It uses a child theme and a responsive mobile design for theming. Integrations include Elementor editor, Mailchimp, and WooCommerce.</p>
-                      </div>      
-                    </div> 
                   </Fade>
 
                 </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -40,5 +40,3 @@ const ContactForm = () => {
     </form>
   );
 };
-
-export default ContactForm;
