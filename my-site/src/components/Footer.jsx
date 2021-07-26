@@ -17,7 +17,11 @@ class Footer extends Component {
 						</li>
 						) 
 					})}		
-				</ul>
+        </ul>
+        <div className="copyright">
+         <p>© 2021 NxNE Web Solutions</p> 
+        </div>
+
       </div>
     )
   }

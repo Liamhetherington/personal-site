@@ -15,6 +15,7 @@ import CMSImg from '../components/SVGs/CMSImg'
 import SEOImg from '../components/SVGs/SEOImg'
 import AnalyticsImg from '../components/SVGs/AnalyticsImg'
 import ReactImg from '../components/SVGs/ReactImg'
+import APIImg from '../components/SVGs/APIImg'
 
 class Homepage extends Component {
 
@@ -65,6 +66,9 @@ class Homepage extends Component {
               <Fade bottom duration={3000}>
                 <h2>How are we going to help?</h2>
                 <p>Here are just some of the ways we can help your business increase traffic.</p>
+                <a href="/services">
+                  <Button>View Our Services</Button>
+                </a>
               </Fade>
                 
               <div className="service-cards">
@@ -119,7 +123,14 @@ class Homepage extends Component {
                     <h3>Search Engine Optimization</h3>
                     <p>Let us build you a new content management system(CMS). Using either WordPress or Drupal, we will build a turnkey CMS that allows you to create pages and posts, update images and content, and view user analytics.</p> 
                   </div>
-                </Fade>  
+                </Fade>
+                <Fade left duration={2000}>
+                  <div className="service-card">
+                    <APIImg />
+                    <h3>API Integrations</h3>
+                    <p>If you're looking at integrating a third-party software into your site we can help with that! We utilize best practices to implement and configure APIs in the most performance friendly way possible.</p> 
+                  </div>
+                </Fade> 
                 </div>              
               </div>    
             </div>

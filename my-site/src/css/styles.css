@@ -53,6 +53,14 @@
   display: none;
 }
 
+.footer-container .copyright {
+  margin-bottom: 10px;
+}
+
+.footer-container .copyright p {
+  font-size: 12px;
+}
+
 .navbar-container {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -599,11 +607,12 @@
 .contact-cta .cta-title {
   font-size: 36px;
   font-weight: 300;
+  font-size: 32px;
 }
 
 .contact-cta .cta-subtitle {
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .contact-cta .contact-cta-btn {
