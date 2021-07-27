@@ -76,7 +76,7 @@ class Homepage extends Component {
                   <div className="service-card">
                     <ReactImg />
                     <h3>React Development</h3>
-                    <p>We can build you a design from the ground up with multi-step wireframing. This is where you get to decide what pages you need, which features are going to be required, and where everything fits! Don't forget branding. Our design experts will provide suggestions and help bring your vision to life!</p>
+                    <p>Over 95% of websites today are built using JavaScript. React is a leading JavaScript framework created by facebook in order to improve speed, performance, and flexibility of web and mobile applications. This website is built entirely with a React front end! If you have a website, or application in mind that you would like built with React we are here to help!</p>
                   </div>
                 </Fade>
                 <Fade left duration={2000}>

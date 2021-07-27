@@ -199,7 +199,7 @@
     width: 100%;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 1000;
   }
   .nav-links {
     text-align: center;
@@ -213,7 +213,7 @@
   }
   .navbar-logo {
     position: absolute;
-    margin: 0 !important;
+    margin: -80px !important;
     width: 40% !important;
     left: 30%;
     right: 30%;
@@ -328,7 +328,7 @@
   justify-content: center;
   align-items: center;
   min-height: 250px;
-  color: #1c1c1c;
+  color: black;
 }
 
 .home-body .mission-statement h2 {
@@ -514,15 +514,110 @@
 }
 
 @media screen and (max-width: 830px) {
-  .hero-banner {
+  .home-body .hero-banner {
     background-position: 80% 100%;
     background-size: 280px 250px;
     height: 600px;
+    padding: 20px;
+    flex-direction: column;
   }
-  .hero-banner .hero-content {
+  .home-body .hero-banner .home-hero-img {
+    width: 220px;
+    margin: auto;
+  }
+  .home-body .hero-banner .hero-content {
     width: 100% !important;
-    height: 100%;
     margin: 0px !important;
+    padding: 15px;
+  }
+  .home-body .hero-banner .hero-content .hero-box {
+    z-index: 3;
+    position: absolute;
+    min-height: 219px;
+    width: 248px;
+    top: 31vh;
+    left: 5vh;
+  }
+  .home-body .hero-banner .hero-content .hero-box-2 {
+    width: 330px;
+    height: 100px;
+    top: 22vh;
+    left: 2vh;
+  }
+  .home-body .mission-statement {
+    justify-content: unset;
+    width: 70%;
+    text-align: left;
+  }
+  .home-body .mission-statement h2 {
+    width: 100%;
+    text-align: left;
+  }
+  .home-body .mission-statement p {
+    text-align: left;
+  }
+  .home-body .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-body .about-section .about-content {
+    margin: unset;
+  }
+  .home-body .about-section .about-image {
+    max-width: unset;
+    z-index: 100;
+    margin-top: -20px;
+  }
+  .home-body .about-section a {
+    text-decoration: none;
+    margin: 20px;
+  }
+  .home-body .about-section a button {
+    top: unset;
+    font-size: unset;
+    right: unset;
+    position: relative;
+    display: block !important;
+    margin: auto !important;
+  }
+  .home-body .about-section .about-box {
+    width: 95%;
+    height: 70%;
+  }
+  .home-body .services-section .services-content {
+    width: 70%;
+  }
+  .home-body .services-section .services-content h2 {
+    text-align: left;
+  }
+  .home-body .services-section .services-content p {
+    text-align: left;
+  }
+  .home-body .services-section .services-content a {
+    text-decoration: none;
+    margin-bottom: -50px;
+  }
+  .home-body .services-section .services-content a Button {
+    top: unset;
+    font-size: unset;
+    right: unset;
+    position: relative;
+    display: block !important;
+  }
+  .home-body .services-section .services-content .service-cards {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+  }
+  .home-body .services-section .services-content .service-cards .service-card {
+    margin-top: 120px;
+  }
+  .home-body .work-section .work-samples .project-sample {
+    flex-direction: column;
+    width: 85%;
+  }
+  .home-body .work-section .work-samples .project-sample img {
+    max-width: 85%;
   }
 }
 
@@ -617,5 +712,28 @@
 
 .contact-cta .contact-cta-btn {
   margin: 0 !important;
+}
+
+@media (max-width: 830px) {
+  .contact-cta {
+    flex-direction: column;
+    background-color: #fff;
+  }
+  .contact-cta .contact-cta-content {
+    width: unset;
+  }
+  .contact-cta svg {
+    width: 250px !important;
+  }
+  .contact-cta a {
+    text-decoration: none;
+  }
+  .contact-cta a Button {
+    top: unset;
+    font-size: unset;
+    right: unset;
+    position: relative;
+    display: block !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

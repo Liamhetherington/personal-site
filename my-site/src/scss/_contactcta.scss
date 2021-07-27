@@ -32,3 +32,26 @@
     margin: 0 !important;
   }
 }
+
+@media (max-width: 830px) {
+  .contact-cta {
+    flex-direction: column;
+    background-color: #fff;
+    .contact-cta-content {
+      width: unset;
+    }
+    svg {
+      width: 250px !important;
+    }
+    a {
+      text-decoration: none;
+      Button {
+        top: unset;
+        font-size: unset;
+        right: unset;
+        position: relative;
+        display: block !important;
+      }
+    }
+  }
+}

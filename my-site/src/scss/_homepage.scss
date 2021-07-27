@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
     min-height: 250px;
-    color: #1c1c1c;
+    color: black;
     h2 {
       text-decoration: underline;
       margin-bottom: 15px;
@@ -222,14 +222,117 @@
 }
 
 @media screen and (max-width: 830px) {
-  .hero-banner {
-    background-position: 80% 100%;
-    background-size: 280px 250px;
-    height: 600px;
-    .hero-content {
-      width: 100% !important;
-      height: 100%;
-      margin: 0px !important;
+  .home-body {
+    .hero-banner {
+      background-position: 80% 100%;
+      background-size: 280px 250px;
+      height: 600px;
+      padding: 20px;
+      flex-direction: column;
+      .home-hero-img {
+        width: 220px;
+        margin: auto;
+      }
+      .hero-content {
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 15px;
+        .hero-box {
+          z-index: 3;
+          position: absolute;
+          min-height: 219px;
+          width: 248px;
+          top: 31vh;
+          left: 5vh;
+        }
+        .hero-box-2 {
+          width: 330px;
+          height: 100px;
+          top: 22vh;
+          left: 2vh;
+        }
+      }
+    }
+    .mission-statement {
+      justify-content: unset;
+      width: 70%;
+      text-align: left;
+      h2 {
+        width: 100%;
+        text-align: left;
+      }
+      p {
+        text-align: left;
+      }
+    }
+    .about-section {
+      flex-direction: column;
+      align-items: center;
+      .about-content {
+        margin: unset;
+      }
+      .about-image {
+        max-width: unset;
+        z-index: 100;
+        margin-top: -20px;
+      }
+      a {
+        text-decoration: none;
+        margin: 20px;
+        button {
+          top: unset;
+          font-size: unset;
+          right: unset;
+          position: relative;
+          display: block !important;
+          margin: auto !important;
+        }
+      }
+      .about-box {
+        width: 95%;
+        height: 70%;
+      }
+    }
+    .services-section {
+      .services-content {
+        width: 70%;
+        h2 {
+          text-align: left;
+        }
+        p {
+          text-align: left;
+        }
+        a {
+          text-decoration: none;
+          margin-bottom: -50px;
+          Button {
+            top: unset;
+            font-size: unset;
+            right: unset;
+            position: relative;
+            display: block !important;
+          }
+        }
+        .service-cards {
+          flex-direction: column;
+          align-items: center;
+          flex-basis: 50%;
+          .service-card {
+            margin-top: 120px;
+          }
+        }
+      }
+    }
+    .work-section {
+      .work-samples {
+        .project-sample {
+          flex-direction: column;
+          width: 85%;
+          img {
+            max-width: 85%;
+          }
+        }
+      }
     }
   }
 }
