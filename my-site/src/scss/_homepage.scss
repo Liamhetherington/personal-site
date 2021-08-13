@@ -138,6 +138,7 @@
       .service-cards {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         margin-bottom: 30px;
         margin-top: 140px;
@@ -257,6 +258,7 @@
       justify-content: unset;
       width: 70%;
       text-align: left;
+      min-height: 200px;
       h2 {
         width: 100%;
         text-align: left;
@@ -314,8 +316,8 @@
           }
         }
         .service-cards {
-          flex-direction: column;
           align-items: center;
+          margin-top: 40px;
           flex-basis: 50%;
           .service-card {
             margin-top: 120px;
@@ -329,10 +331,31 @@
           flex-direction: column;
           width: 85%;
           img {
-            max-width: 85%;
+            max-width: 95%;
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1272px) {
+  .service-card {
+    width: 265px;
+    svg {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 1096px) {
+  .service-cards {
+    column-count: 2;
+    .service-card {
+      min-height: 460px;
+    }
+    h3 {
+      margin-top: 0px !important;
     }
   }
 }
