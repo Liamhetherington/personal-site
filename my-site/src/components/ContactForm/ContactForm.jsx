@@ -25,8 +25,8 @@ const ContactForm = () => {
   };
   return (
     <div className="contact-form-container">
-      <h2>Boost your online traffic and lead generation today</h2>
-      <p>Let us know a little more about your web goals. Don't forget to leave a short description of the work you are looking to have done. One of our representatives will reach out to you within 24 hours to arrange a free phone or zoom consultation!</p>
+      <h2>We'd love to hear from you</h2>
+      <p>No matter what you're looking for, when it comes to web, we're here to help. Get in touch with us to set up a free consultation call.</p>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="contact-name">
           <label htmlFor="name">Name:</label>
