@@ -5,4 +5,65 @@
   -o-background-size: cover;
   background-size: cover;
   min-height: 550px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  .about-banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 4px;
+    background-color: rgba(132, 127, 127, 0.449);
+    .hero-title {
+      color: white;
+      text-decoration: underline;
+      width: 50%;
+      margin-bottom: 15px;
+    }
+    p {
+      color: white;
+      max-width: 50%;
+      line-height: 1.5em;
+    }
+  }
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8%;
+  .team-title {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 32px;
+    align-self: center;
+    margin-bottom: 1em;
+  }
+  .liam-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .team-member-text {
+      display: flex;
+      flex-direction: column;
+      max-width: 60%;
+      h3 {
+        font-size: 28px;
+        font-weight: 300;
+      }
+      p {
+        font-weight: 300;
+        margin-top: 10px;
+        line-height: 1.5em;
+      }
+    }
+    .liam-photo {
+      border-radius: 160px;
+      max-width: 300px;
+    }
+  }
 }

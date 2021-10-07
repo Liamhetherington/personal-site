@@ -63,9 +63,6 @@ class Homepage extends Component {
               <Fade bottom duration={3000}>
                 <h2>How are we going to help?</h2>
                 <p>Here are just some of the ways we can help your business increase traffic.</p>
-                <a href="/services">
-                  <Button>View All Our Services</Button>
-                </a>
               </Fade>
                 
               <div className="service-cards">
@@ -73,7 +70,7 @@ class Homepage extends Component {
                   <div className="service-card">
                     <ReactImg />
                     <h3>React Development</h3>
-                    <p>Over 95% of websites today are built using JavaScript. React is a leading JavaScript framework created by facebook in order to improve speed, performance, and flexibility of web and mobile applications. This website is built entirely with a React front end! If you have a website, or application in mind that you would like built with React we are here to help!</p>
+                    <p>Over 95% of websites today are built using JavaScript. React is a leading JavaScript framework created by facebook in order to improve speed, performance, and flexibility of web and mobile applications. This website is built entirely with a React front end!</p>
                   </div>
                 </Fade>
                 <Fade left duration={2000}>
@@ -98,7 +95,12 @@ class Homepage extends Component {
                   </div>
                 </Fade>
               </div>            
-              </div>    
+            </div> 
+              <Fade bottom duration={3000}>
+                <a href="/services">
+                  <Button>View All Our Services</Button>
+                </a>   
+              </Fade>
             </div>
 
           
