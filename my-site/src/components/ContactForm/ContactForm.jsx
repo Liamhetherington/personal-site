@@ -25,9 +25,9 @@ const ContactForm = () => {
   };
   return (
     <div className="contact-form-container">
-      <h2>We'd love to hear from you</h2>
-      <p>No matter what you're looking for, when it comes to web, we're here to help. Get in touch with us to set up a free consultation call.</p>
       <form className="contact-form" onSubmit={handleSubmit}>
+        <h2>We'd love to hear from you</h2>
+        <p>No matter what you're looking for, when it comes to web, we're here to help. Get in touch with us to set up a free consultation call.</p>
         <div className="contact-name">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" placeholder="Name*" required />
