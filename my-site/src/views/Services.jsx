@@ -8,13 +8,27 @@ class Services extends Component {
     return(
       <div className="services-body">
         <div className="services-banner">
-          <h1 className="services-title">What can we bring to your business?</h1>
-          <p>Check out some of the ways we can help your business grow its online traffic. Each business has unique needs and we love that. Before engaging in our services our experts will always hold a consultation in order to better understand how we fit into your business growth strategy.</p>
+          <h1 className="services-title">Where our solutions meet your challenges</h1>
         </div>
-        <div className="main-content">
-
+       
+        <div className="services-grid">
+          <div className="services-block" id="design"> 
+            <h4>Design</h4>
+          </div>
+          <div className="services-block" id="content-management"> 
+            <h4>Content Management Systems</h4>
+          </div>
+          <div className="services-block" id="integrations"> 
+            <h4>Integrations</h4>
+          </div>
+          <div className="services-block" id="react"> 
+            <h4>React Development</h4>
+          </div>
         </div>
-        <ContactCTA />
+        <div className="services-block-outter" id="traffic-analytics"> 
+            <h4>SEO, Traffic & Analytics</h4>
+        </div>
+        {/* <ContactCTA /> */}
       </div>
     )
   }
