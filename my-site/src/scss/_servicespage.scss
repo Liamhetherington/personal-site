@@ -1,12 +1,20 @@
 .services-banner {
   background-color:rgb(21, 38, 88);
-  min-height: 300px;
+  min-height: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   .services-title {
     color: white;
     font-weight: 500;
+    margin-bottom: 10px;
+  }
+  p {
+    color: white;
+    max-width: 55%;
+    line-height: 1.5em;
+    margin-bottom: 10px;
   }
 }
 

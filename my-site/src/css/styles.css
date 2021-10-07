@@ -336,7 +336,7 @@ h1 {
 }
 
 .home-body .mission-statement h2 {
-  text-decoration: underline;
+  font-size: 32px;
   margin-bottom: 15px;
   font-weight: 300;
 }
@@ -344,6 +344,7 @@ h1 {
 .home-body .mission-statement p {
   text-align: center;
   font-weight: 300;
+  font-size: 18px;
 }
 
 .home-body .about-section {
@@ -776,7 +777,7 @@ h1 {
 }
 
 .team-section .liam-section .liam-photo {
-  border-radius: 160px;
+  border-radius: 55%;
   max-width: 300px;
 }
 
@@ -844,8 +845,9 @@ h1 {
 
 .services-banner {
   background-color: #152658;
-  min-height: 300px;
+  min-height: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -853,6 +855,14 @@ h1 {
 .services-banner .services-title {
   color: white;
   font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.services-banner p {
+  color: white;
+  max-width: 55%;
+  line-height: 1.5em;
+  margin-bottom: 10px;
 }
 
 .services-grid {

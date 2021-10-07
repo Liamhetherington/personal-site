@@ -8,7 +8,11 @@ class Services extends Component {
     return(
       <div className="services-body">
         <div className="services-banner">
-          <h1 className="services-title">Where our solutions meet your challenges</h1>
+          <h1 className="services-title">Our solutions are here to meet your challenges head on</h1>
+          <p>Each business has it's own unique needs when it comes to leveraging the internet. Whether you are looking to build an e-commerce website on Wordpress from scratch,
+            create a React web application to host on your site, improve your SEO ranking, or just fix a bug, we can help.
+          </p>
+          <button className="btn btn--primary btn--medium" href="/contact">Get In Touch</button>
         </div>
        
         <div className="services-grid">
